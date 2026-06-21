@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BRAMAYA | A Legacy in the Making</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#F8F3EB;
+color:#111;
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,0.75);
+backdrop-filter:blur(10px);
+z-index:999;
+}
+
+.logo-text{
+font-size:22px;
+font-weight:600;
+color:#C8A15A;
+letter-spacing:2px;
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-size:14px;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#C8A15A;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1600');
+
+background-size:cover;
+background-position:center;
+}
+
+.hero-content{
+max-width:900px;
+color:white;
+}
+
+.hero-logo{
+width:260px;
+max-width:80%;
+margin-bottom:30px;
+filter:drop-shadow(0 10px 25px rgba(0,0,0,.5));
+}
+
+.hero h1{
+font-family:'Playfair Display',serif;
+font-size:70px;
+letter-spacing:8px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:22px;
+opacity:.9;
+margin-bottom:35px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 35px;
+background:#C8A15A;
+color:white;
+text-decoration:none;
+border-radius:40px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+/* SECTIONS */
+
+section{
+padding:90px 10%;
+}
+
+.section-title{
+font-family:'Playfair Display',serif;
+font-size:46px;
+text-align:center;
+margin-bottom:35px;
+}
+
+.about{
+max-width:900px;
+margin:auto;
+text-align:center;
+font-size:18px;
+line-height:2;
+}
+
+/* VALUES */
+
+.values{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h3{
+color:#C8A15A;
+margin-bottom:10px;
+}
+
+/* QUOTE */
+
+.quote{
+background:#111;
+color:white;
+padding:90px 20px;
+text-align:center;
+}
+
+.quote h2{
+font-family:'Playfair Display',serif;
+font-size:42px;
+max-width:900px;
+margin:auto;
+}
+
+/* CONTACT */
+
+.contact{
+text-align:center;
+line-height:2.2;
+}
+
+.contact p{
+font-size:18px;
+}
+
+/* FOOTER */
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+width:60px;
+height:60px;
+background:#25D366;
+color:white;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+text-decoration:none;
+font-size:28px;
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:42px;
+letter-spacing:3px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.hero-logo{
+width:180px;
+}
+
+.section-title{
+font-size:34px;
+}
+
+nav ul{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo-text">BRAMAYA</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#values">Values</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<img src="logo.png" alt="BRAMAYA Logo" class="hero-logo">
+
+<p>A Legacy in the Making</p>
+
+<a href="#about" class="btn">
+Discover More
+</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">About BRAMAYA</h2>
+
+<div class="about">
+
+<p>
+BRAMAYA is more than a brand.
+It is a vision built on trust, purpose and timeless values.
+</p>
+
+<br>
+
+<p>
+Inspired by excellence and crafted for generations,
+BRAMAYA represents authenticity, elegance and legacy.
+</p>
+
+<br>
+
+<p>
+Every great legacy begins with a dream.
+This is the beginning of BRAMAYA.
+</p>
+
+</div>
+
+</section>
+
+<section id="values">
+
+<h2 class="section-title">Our Values</h2>
+
+<div class="values">
+
+<div class="card">
+<h3>Trust</h3>
+<p>Built on honesty and commitment.</p>
+</div>
+
+<div class="card">
+<h3>Quality</h3>
+<p>Crafted with attention to every detail.</p>
+</div>
+
+<div class="card">
+<h3>Purpose</h3>
+<p>Driven by meaning and intention.</p>
+</div>
+
+<div class="card">
+<h3>Legacy</h3>
+<p>Created to inspire generations.</p>
+</div>
+
+</div>
+
+</section>
+
+<div class="quote">
+
+<h2>
+“The finest legacies are not inherited.
+They are built.”
+</h2>
+
+</div>
+
+<section id="contact" class="contact">
+
+<h2 class="section-title">Contact</h2>
+
+<p><strong>BRAMAYA</strong></p>
+
+<p>📍 Sitapura, Jaipur, Rajasthan – 302022</p>
+
+<p>✉️ info@bramaya.com</p>
+
+<p>📷 Instagram: @bramayaofficial</p>
+
+<p>🌐 bramaya.com</p>
+
+</section>
+
+<footer>
+
+© 2026 BRAMAYA | A Legacy in the Making
+
+</footer>
+
+<a
+class="whatsapp"
+href="https://wa.me/91XXXXXXXXXX"
+target="_blank">
+💬
+</a>
+
+</body>
+</html>
